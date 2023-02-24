@@ -7,4 +7,10 @@ It requires the ThreadJobs and Az modules from the PowerShell gallery.
 
 It requires a system assigned identity.
 
-These were modified from the original scripts from azureautomation to use a system assigned identity along with migrating from AzureRM to Az.
+They were modified from the original scripts from azureautomation to use a system assigned identity along with migrating from AzureRM to Az.
+
+Originals:
+
+https://github.com/azureautomation/update-management-turn-on-vms
+
+https://github.com/azureautomation/update-management-turn-off-vms
