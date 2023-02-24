@@ -1,4 +1,4 @@
-Update Management - Turn On VMs
+Update Management - Turn On/Off VMs
 ===============================
 
 These scripts are intended to be run as a part of Update Management Pre/Post scripts. They will ensure all Azure VMs in the Update Deployment are running so they recieve updates and then stop any that were orignally off.
