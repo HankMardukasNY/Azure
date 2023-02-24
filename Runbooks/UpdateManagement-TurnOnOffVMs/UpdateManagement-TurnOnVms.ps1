@@ -88,7 +88,6 @@ if (!$vmIds)
 # search through all the automation accounts in the subscription 
 # to find the one with a job which matches our job ID
 $AutomationResource = Get-AzResource -ResourceType Microsoft.Automation/AutomationAccounts
-Write-Output "AutomationResource: $AutomationResource"
 
 foreach ($Automation in $AutomationResource)
 {
@@ -143,6 +142,8 @@ if ($jobsList)
 {
     Write-Output "Waiting for machines to finish starting..."
     Wait-Job -Id $jobsList
+    #Wait 5 minutes for hybrid worker to start
+    Start-Sleep -Seconds 300
 }
 
 foreach($id in $jobsList)
